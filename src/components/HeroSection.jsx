@@ -11,8 +11,32 @@ export const HeroSection = ({ altStyle ,title, text, img, hasButton, buttonText 
       alignItems: `${altStyle ? 'flex-end' : 'flex-start'}`
     }}>
 
-    {altStyle && (
-      <div className='iconed-area'>
+    {altStyle && (<IconedSection></IconedSection>)}
+
+    <div className='content'>
+      <h1>{title}</h1>
+      <p>{text}</p>
+      {hasButton ?  <button className='action-button'>{buttonText}</button>:<></>}
+    </div>
+       
+
+
+    </section>
+  );
+};
+
+HeroSection.propTypes = {
+  altStyle : PropTypes.bool,
+  title: PropTypes.string,
+  text: PropTypes.string,
+  img: PropTypes.string,
+  hasButton: PropTypes.bool,
+  buttonText:PropTypes.string,
+};
+
+const IconedSection = ()=>{
+  return (
+    <div className='iconed-area'>
           <span className='background'>
 
           <div className='icons'>
@@ -35,25 +59,6 @@ export const HeroSection = ({ altStyle ,title, text, img, hasButton, buttonText 
           
 
           </span>
-      </div>)}
-
-    <div className='content'>
-      <h1>{title}</h1>
-      <p>{text}</p>
-      {hasButton ?  <button className='action-button'>{buttonText}</button>:<></>}
-    </div>
-       
-
-
-    </section>
-  );
-};
-
-HeroSection.propTypes = {
-  altStyle : PropTypes.bool,
-  title: PropTypes.string,
-  text: PropTypes.string,
-  img: PropTypes.string,
-  hasButton: PropTypes.bool,
-  buttonText:PropTypes.string,
-};
+      </div>
+  )
+}

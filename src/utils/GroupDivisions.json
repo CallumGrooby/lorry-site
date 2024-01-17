@@ -1,0 +1,77 @@
+[
+    {
+      "logo": "",
+      "information": "DirectLinc is a market leading logistics provider offering a national container and specialist transport service covering all main ports and rail terminals. Our unique inland position drives efficiency into the supply chain enabling direct and national solutions on a short lead time basis. Our state of the art gen set equipped fleet offers the ability to transport fresh, ambient and frozen containers for import and export driving efficiency, reducing food miles and lowering CO2 emissions.",
+      "services": [
+        "Specialized Transport",
+        "Container Transport",
+        "Genset Trailers"
+      ],
+      "hasWebsite": true,
+      "websiteURL": "",
+      "contactName": "Tom Dolan",
+      "contactEmail": "tom.dolan@direct-linc.com",
+      "contactNumber": "01480 759804",
+      "contactAddressLine1": "A141 Upwood Road",
+      "contactAddressLine2": "Wyton",
+      "contactAddressTown": "Huntingdon",
+      "contactAddressCountry": "Cambridgeshire",
+      "contactAddressPostCode": "PE28 2DU"
+    },
+    {
+      "logo": "",
+      "information": "Providing bulk services for Grain, sugar beet, and cereal, FreshLinc bulk can be traced back to one of Lincolnshire’s largest independent growers. Merged into the FreshLinc group of companies in 2017 and Rebranded in 2018 FLB is now a major force within the Agri Bulk supply chain. TASCC and FIAS accredited FLB operates a modern fleet of Bulk Tippers and curtain siders, coupled to state of the art management systems FLB now drives the latest technology into the Bulk industry.",
+      "services": [
+        "Bulk Services",
+        "Grain Services",
+        "Cereal Services"
+      ],
+      "hasWebsite": true,
+      "websiteURL": "",
+      "contactName": "Lee Butler",
+      "contactEmail": "lee.butler@flbulk.com",
+      "contactNumber": "01775 715480"
+    },
+    {
+      "logo": "",
+      "information": "FLX Logistics is a leading ambient logistics management company providing cost-effective transport solutions throughout the UK and Mainland Europe. Operating a national network consisting of over 1200 vehicles and partners, FLX offers a truly low overhead national logistics management service. Using the most updated transport management systems providing real-time tracking and POD retrieval on an adhoc or contractual basis, FLX Logistics drives efficiency through the supply chain.",
+      "services": [
+        "Logistics Management",
+        "Transport Solutions",
+        "Real-time Tracking"
+      ],
+      "hasWebsite": true,
+      "websiteURL": "",
+      "contactName": "Paul McCarthy",
+      "contactEmail": "paul.mccarthy@flxlogistics.co.uk",
+      "contactNumber": "0161 243 0541"
+    },
+    {
+      "logo": "",
+      "information": "Product Recovery Services are located in the South Holland district of Lincolnshire, centrally placed within the heart of imported destinations. Operating from a temperature-controlled establishment with accredited ISO9001 certification, we specialize in offering crisis services for fresh produce, food, and food-related items, with the ability to screen food or products rapidly and rework where necessary, offering multiple solutions for resolutions. All requests are dealt with within 24 hours, with full reporting provided on completion and all usable equipment returned.",
+      "services": [
+        "Crisis Services",
+        "Fresh Produce Services",
+        "Food Screening"
+      ],
+      "hasWebsite": true,
+      "websiteURL": "",
+      "contactName": "Kev Marshall",
+      "contactEmail": "kev.marshall@prslogistics.co.uk",
+      "contactNumber": "01775 715489"
+    },
+    {
+      "logo": "",
+      "information": "FloraLinc is one of the leading specialists in horticultural distribution with transport solutions throughout the UK, Ireland, and mainland Europe with a modern temperature-controlled and ambient horticultural-specific fleet. Operating from a 33-acre site in Spalding and a secondary site in Stratford-upon-Avon. All vehicles are fitted with the latest telematics equipment, live CCTV, DVS (Direct Vision Standards) for delivering into London along with tail-lifts and the ability to provide live POD capture via our Customer Portal.",
+      "services": [
+        "Horticultural Distribution",
+        "Transport Solutions",
+        "Live POD Capture"
+      ],
+      "hasWebsite": true,
+      "websiteURL": "",
+      "contactName": "Jonny Broster",
+      "contactEmail": "jonny.broster@floralinc.com",
+      "contactNumber": "01775 715484"
+    }
+  ]
