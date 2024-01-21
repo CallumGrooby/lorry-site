@@ -12,8 +12,15 @@ import {
   faEye,
   faTrain,
   faShip,
+  faUsers,
+  faScaleBalanced,
 } from "@fortawesome/free-solid-svg-icons";
-
+import {
+  faFacebook,
+  faLinkedin,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+library.add(faFacebook, faLinkedin, faInstagram);
 library.add(
   faWarehouse,
   faTruck,
@@ -23,7 +30,9 @@ library.add(
   faStar,
   faEye,
   faTrain,
-  faShip
+  faShip,
+  faUsers,
+  faScaleBalanced
 );
 
 function App() {

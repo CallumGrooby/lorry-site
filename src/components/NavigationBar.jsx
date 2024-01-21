@@ -1,18 +1,27 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
+import logo from "../assets/freshlincs-logo.png";
 export const NavigationBar = () => {
   return (
-    <div>
-        <div className='logo'>
+    <nav className="main-nav">
+      <div className="logo">
+        <img src={logo} alt="Fresh Lincs Logo" />
+      </div>
 
-        </div>
-
-        <nav className='navbar'>
-            <Link className='navigation-link' to={"/home"}><h1>Home</h1></Link>
-            <Link className='navigation-link' to={"/services"}><h1>Services</h1></Link>
-            <Link className='navigation-link' to={"/group-divisions"}><h1>Group Divisions</h1></Link>
-            <Link className='navigation-link' to={"/careers"}><h1>Careers</h1></Link>
-        </nav>
-    </div>
-  )
-}
+      <section className="navigation-links">
+        <Link className="link" to={"/home"}>
+          Home
+        </Link>
+        <Link className="link" to={"/services"}>
+          Services
+        </Link>
+        <Link className="link" to={"/group-divisions"}>
+          Group Divisions
+        </Link>
+        <Link className="link" to={"/careers"}>
+          Careers
+        </Link>
+      </section>
+    </nav>
+  );
+};

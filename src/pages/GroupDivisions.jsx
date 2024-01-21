@@ -7,6 +7,7 @@ import { useState } from "react";
 import backgroundImage from "../assets/lorrys-groups.png";
 
 import Groups from "../utils/GroupDivisions.json";
+import { Footer } from "../components/Footer";
 
 export const GroupDivisions = () => {
   console.log(Groups);
@@ -23,21 +24,20 @@ export const GroupDivisions = () => {
         hasNavbar={false}
       ></ServicesHeroSection>
 
-      {Groups.map((DivisionGroup) => {
-        return (
-          <GroupHolder key={GroupDivisions.index} groupInfo={DivisionGroup} />
-        );
-      })}
+      <body className="group-divisions">
+        {Groups.map((DivisionGroup) => {
+          return (
+            <GroupHolder key={GroupDivisions.index} groupInfo={DivisionGroup} />
+          );
+        })}
+      </body>
+      <Footer></Footer>
     </div>
   );
 };
 
 const GroupHolder = ({ groupInfo }) => {
-  return (
-    <section>
-      <GroupInfo groupInfo={groupInfo}></GroupInfo>
-    </section>
-  );
+  return <GroupInfo groupInfo={groupInfo}></GroupInfo>;
 };
 
 const GroupInfo = ({ groupInfo }) => {
@@ -47,17 +47,36 @@ const GroupInfo = ({ groupInfo }) => {
         <img src={groupInfo.logo}></img>
         <p>{groupInfo.information}</p>
         <h2>Services</h2>
-        {groupInfo.services.map((service, index) => {
-          return (
-            <p key={index}>
-              {service}
-              <span className="line"></span>
-            </p>
-          );
-        })}
+        <div className="services-list">
+          {groupInfo.services.map((service, index) => {
+            return (
+              <p key={index}>
+                {service}
+                <span className="line"></span>
+              </p>
+            );
+          })}
+        </div>
       </div>
 
-      <div className="contact-information"></div>
+      <section className="contact-information">
+        {groupInfo.hasWebsite && (
+          <button className="action-button">Vist Website</button>
+        )}
+
+        <div className="contact-details">
+          <h2>Contact Information</h2>
+          <p>{groupInfo.contactName}</p>
+          <p>{groupInfo.contactEmail}</p>
+          <p>{groupInfo.contactNumber}</p>
+        </div>
+        <div className="address-details">
+          <h2>Address</h2>
+          <p>{groupInfo.contactName}</p>
+          <p>{groupInfo.contactEmail}</p>
+          <p>{groupInfo.contactNumber}</p>
+        </div>
+      </section>
     </article>
   );
 };

@@ -2,6 +2,7 @@ import { NavigationBar } from "../components/NavigationBar";
 import { Outlet } from "react-router-dom";
 import { ServicesHeroSection } from "../components/ServicesHeroSection";
 import { useState } from "react";
+import { Footer } from "../components/Footer";
 
 export const Services = () => {
   const [data, setData] = useState({
@@ -12,7 +13,7 @@ export const Services = () => {
   });
 
   return (
-    <nav>
+    <body>
       <NavigationBar />
       <ServicesHeroSection
         title={data.title}
@@ -22,6 +23,7 @@ export const Services = () => {
       ></ServicesHeroSection>
 
       <Outlet context={[data, setData]} />
-    </nav>
+      <Footer></Footer>
+    </body>
   );
 };

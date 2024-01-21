@@ -1,0 +1,77 @@
+{
+    "departments": [
+        "All",
+        "Operations",
+        "Supply Chain Management",
+        "Logistics",
+        "Quality Control",
+        "Facilities",
+        "Sales",
+        "Information Technology",
+        "Finance",
+        "Human Resources"
+    ],
+    "jobs": [
+      {
+        "title": "Logistics Coordinator",
+        "department": "Operations",
+        "location": "UK/Europe",
+        "description": "Coordinate and optimize the movement of goods through the supply chain, ensuring timely deliveries and efficient logistics operations."
+      },
+      {
+        "title": "Supply Chain Analyst",
+        "department": "Supply Chain Management",
+        "location": "UK/Europe",
+        "description": "Analyze and improve the end-to-end supply chain processes, optimizing inventory levels, and ensuring seamless product flow."
+      },
+      {
+        "title": "Transportation Manager",
+        "department": "Logistics",
+        "location": "UK/Europe",
+        "description": "Manage and oversee the transportation network, ensuring the efficient and timely delivery of products to customers."
+      },
+      {
+        "title": "Quality Assurance Specialist",
+        "department": "Quality Control",
+        "location": "UK/Europe",
+        "description": "Implement and monitor quality control processes, ensuring that products meet the highest standards of quality and safety."
+      },
+      {
+        "title": "Cold Chain Technician",
+        "department": "Facilities",
+        "location": "UK/Europe",
+        "description": "Maintain and troubleshoot temperature-controlled facilities and equipment to ensure the integrity of perishable products."
+      },
+      {
+        "title": "Sales Executive",
+        "department": "Sales",
+        "location": "UK/Europe",
+        "description": "Drive sales growth by building and maintaining relationships with clients, promoting company services, and meeting sales targets."
+      },
+      {
+        "title": "IT Systems Analyst",
+        "department": "Information Technology",
+        "location": "UK/Europe",
+        "description": "Support and enhance IT systems, analyze user requirements, and implement solutions to optimize business processes."
+      },
+      {
+        "title": "Finance Manager",
+        "department": "Finance",
+        "location": "UK/Europe",
+        "description": "Oversee financial operations, budgeting, and reporting, providing strategic financial guidance to support business objectives."
+      },
+      {
+        "title": "Human Resources Business Partner",
+        "department": "Human Resources",
+        "location": "UK/Europe",
+        "description": "Collaborate with business units to align HR strategies with organizational goals, manage employee relations, and drive HR initiatives."
+      },
+      {
+        "title": "Customer Service Representative",
+        "department": "Operations",
+        "location": "UK/Europe",
+        "description": "Provide excellent customer service, address inquiries, and resolve issues to ensure customer satisfaction and loyalty."
+      }
+    ]
+  }
+  
