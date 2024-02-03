@@ -8,6 +8,7 @@ import { InternationLogistics } from "../pages/InternationLogistics";
 import { Transport } from "../pages/Transport";
 import { ErrorPage } from "../pages/ErrorPage";
 import { Services } from "../pages/Services";
+import { AboutUs } from "../pages/AboutUs";
 export const Routes = () => {
   return (
     <Router>
@@ -26,8 +27,8 @@ export const Routes = () => {
 
         <Route path="/group-divisions" element={<GroupDivisions />} />
         <Route path="/careers" element={<Careers />} />
-
-        <Route path="/*" element={<ErrorPage />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/*" element={<Home />} />
       </Switch>
     </Router>
   );

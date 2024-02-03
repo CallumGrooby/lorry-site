@@ -3,6 +3,7 @@ import { NavigationBar } from "../components/NavigationBar";
 import { HeroSection } from "../components/HeroSection";
 import backgroundImage from "../assets/lorry-hero01.png";
 import { CurrentVacancies } from "../utils/CurrentVacancies";
+import { Footer } from "../components/Footer";
 export const Careers = () => {
   const icons = [
     { iconName: "users", text: "Collaborative Teams" },
@@ -24,6 +25,7 @@ export const Careers = () => {
       />
 
       <CurrentVacancies />
+      <Footer></Footer>
     </div>
   );
 };

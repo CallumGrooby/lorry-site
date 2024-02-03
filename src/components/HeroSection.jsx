@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
+import { Link, NavLink } from "react-router-dom";
 
 export const HeroSection = ({
   altStyle,
@@ -9,6 +10,7 @@ export const HeroSection = ({
   hasButton,
   buttonText,
   icons,
+  toLink,
 }) => {
   return (
     <section
@@ -32,7 +34,9 @@ export const HeroSection = ({
         <h1 style={{ textAlign: `${altStyle ? "right" : "left"}` }}>{title}</h1>
         <p style={{ textAlign: `${altStyle ? "right" : "left"}` }}>{text}</p>
         {hasButton ? (
-          <button className="action-button">{buttonText}</button>
+          <NavLink to={`/${toLink}`} className="action-button">
+            {buttonText}
+          </NavLink>
         ) : (
           <></>
         )}
@@ -49,6 +53,7 @@ HeroSection.propTypes = {
   hasButton: PropTypes.bool,
   buttonText: PropTypes.string,
   icons: PropTypes.array,
+  toLink: PropTypes.string,
 };
 
 const IconedSection = ({ icons }) => {

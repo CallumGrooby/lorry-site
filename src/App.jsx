@@ -1,6 +1,5 @@
 import { Routes } from "./utils/Routes";
 import "../src/assets/style.scss";
-
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faWarehouse,
@@ -38,6 +37,7 @@ library.add(
 function App() {
   return (
     <>
+      {/* <GoogleMapSection></GoogleMapSection> */}
       <Routes></Routes>
     </>
   );

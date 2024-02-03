@@ -12,6 +12,9 @@ export const NavigationBar = () => {
         <Link className="link" to={"/home"}>
           Home
         </Link>
+        <Link className="link" to={"/about-us"}>
+          About Us
+        </Link>
         <Link className="link" to={"/services"}>
           Services
         </Link>

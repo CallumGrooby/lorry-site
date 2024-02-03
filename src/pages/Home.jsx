@@ -6,9 +6,9 @@ import flowersHeroImage from "../assets/flower-hero.png";
 import lorryJoinUsImage from "../assets/lorry-joinus.png";
 import warehouseGroupsImage from "../assets/warehouse-groups.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { GoogleMap } from "../components/GoogleMap";
 import { Footer } from "../components/Footer";
-
+import { GoogleMapSection } from "../services/GoogleMapSection";
+import { Link } from "react-router-dom";
 const heroIcons = [
   { iconName: "truck", text: "Founded In 1996" },
   { iconName: "warehouse", text: "Cutting-Edge Facilities" },
@@ -28,6 +28,7 @@ export const Home = () => {
         img={lorryHeroImage}
         hasButton={true}
         buttonText={"Request A Quote"}
+        toLink={"home"}
       />
 
       <IconedSection />
@@ -41,12 +42,14 @@ export const Home = () => {
         }
         img={flowersHeroImage}
         hasButton={true}
-        buttonText={"Request A Quote"}
+        buttonText={"Find out more"}
         icons={heroIcons}
+        toLink={"about-us"}
       ></HeroSection>
 
       <JoinOurTeamSection></JoinOurTeamSection>
       <GroupsSections></GroupsSections>
+
       <Footer></Footer>
     </section>
   );
@@ -113,7 +116,9 @@ const IconedSection = () => {
             chains, our multi-divisional services cover unique 3PL requirements.
             Click below for a detailed overview of our offerings.
           </p>
-          <button className="action-button">Our Services</button>
+          <Link to={"/services"} className="action-button">
+            Our Services
+          </Link>
         </header>
       </section>
     </div>
@@ -183,7 +188,9 @@ const JoinOurTeamSection = () => {
             through formal and vocational training. From Apprenticeships to Fast
             Track LGV training, we invest in your success.
           </p>
-          <button className="action-button">Find out more</button>
+          <Link to={"careers"} className="action-button">
+            Find out more
+          </Link>
         </div>
 
         <div className="image-container">
@@ -211,7 +218,9 @@ const GroupsSections = () => {
             precision in storage, proficiency in transportation, and innovative
             supply chain management.
           </p>
-          <button className="action-button">Group Divisions</button>
+          <Link to={"/group-divisions"} className="action-button">
+            Group Divisions
+          </Link>
         </section>
 
         <section className="map-section">
@@ -233,11 +242,9 @@ const GroupsSections = () => {
             <p>Tel: +44 (0)1775 710900</p>
             <p style={{ color: "#f8b9bc" }}>information@freshlinc.com</p>
           </div>
-          <div className="map-container-old"></div>
+          <GoogleMapSection></GoogleMapSection>
         </section>
       </article>
-
-      {/* <GoogleMap></GoogleMap> */}
     </section>
   );
 };

@@ -6,10 +6,10 @@ export const ServicesContentSection = ({ content, hasIcons, iconArray }) => {
 
   return (
     <section className="services-info">
-      <div className="container">
+      <div className="wrapper">
         {content.map((section, index) => {
           return (
-            <article key={index} className="content">
+            <article key={index} className="services-article">
               <div className="text-container">
                 <h1>
                   {section.title}
