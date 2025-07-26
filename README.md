@@ -22,7 +22,7 @@ View the live site → https://callumgrooby.github.io/lorry-site/
 
 ## 📸 Screenshot
 
-
+![Screenshot](./assets/screenshot.png)
 
 ---
 
