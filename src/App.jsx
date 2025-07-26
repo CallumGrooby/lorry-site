@@ -19,6 +19,7 @@ import {
   faLinkedin,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 library.add(faFacebook, faLinkedin, faInstagram);
 library.add(
   faWarehouse,
@@ -37,6 +38,7 @@ library.add(
 function App() {
   return (
     <>
+      <FontAwesomeIcon icon={"facebook"}></FontAwesomeIcon>
       {/* <GoogleMapSection></GoogleMapSection> */}
       <Routes></Routes>
     </>
